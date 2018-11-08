@@ -1,0 +1,26 @@
+<!--
+  Generated template for the HeroFormPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>heroForm</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-item>
+    <ion-label>Hero name</ion-label>
+    <ion-input type="text" [(ngModel)]="name"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Hero quirk</ion-label>
+    <ion-input type="text" [(ngModel)]="quirk"></ion-input>
+  </ion-item>
+  <button ion-button (click)="addHero()" [disabled]="!name && !quirk">Add hero</button>
+</ion-content>
